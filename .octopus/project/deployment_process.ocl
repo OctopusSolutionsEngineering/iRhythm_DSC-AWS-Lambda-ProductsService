@@ -335,7 +335,7 @@ step "deploy-application-lambda" {
                       Role: !GetAtt
                         - IamRoleLambdaExecution
                         - Arn
-                      Runtime: provided
+                      Runtime: provided.al2023
                       Timeout: 600
                       VpcConfig:
                         SecurityGroupIds:
